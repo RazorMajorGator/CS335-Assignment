@@ -12,9 +12,40 @@
     border: 5px solid silver;
 }
 
+#top_nav {
+    display: none;
+}
+
+#top_nav li {
+    list-style: none;
+    font-size: 1.1em;
+    border: 5px solid red;
+    transition: color 100ms;
+    transition: background-color 100,s;
+}
+
+#top_nav li:hover {
+
+    border: none;
+    background-color: black;
+    color: aliceblue;
+
+}
+
 #landing_text p {
     font-size: 1.3em;
     margin: 2% auto 2% auto;
     text-align: justify;
     width: 30%;
+}
+
+.headings {
+    font-size: 1.3em;
+    margin: 2% auto 2% auto;
+    text-align: center;
+
+}
+
+body div:hover{
+    background-color: blueviolet;
 }

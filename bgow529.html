@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -11,25 +11,39 @@
 <body>
     <nav id="top_nav">
         <ul>
-            <li>Home</li>
-            <li>News</li>
-            <li>Displays</li>
-            <li>Comments</li>
+            <li onclick="switchPage('homepage')">Home</li>
+            <li onclick="switchPage('news')">News</li>
+            <li onclick="switchPage('displays')">Displays</li>
+            <li onclick="switchPage('comments')">Comments</li>
         </ul>
     </nav>
-    <div id="homepage">
+    <div id="homepage" class="page">
         <div id="landing_text">
             <p>Welcome to our displays on the history of computing and computers. </p>
             <p> You might like to have a look at the history time line in the entrance corridor down below or visit one of the lobbies to the right for displays containing more detail.You can learn more about the displays here, where you can also see a list of the many topics that we cover. </p>
             <p>If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the department and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.</p>
         </div>
         <ul id="main_nav">
-            <li><a href=#>Home</a></li> 
-            <li><a href=#>News</a></li>
-            <li><a href=#>Displays</a></li>
-            <li><a href=#>Comments</a></li>
+            <li onclick="switchPage('homepage')">Home</li>
+            <li onclick="switchPage('news')">News</li>
+            <li onclick="switchPage('displays')">Displays</li>
+            <li onclick="switchPage('comments')">Comments</li>
         </ul>
     </div>
-    
+    <div id="displays" class="page">
+        <p class="headings">
+            DISPLAYS
+        </p>
+    </div>
+    <div id="news" class="page">
+        <p class="headings">
+            NEWS
+        </p>
+    </div>
+    <div id="comments" class="page">
+        <p class="headings">
+            COMMENTS
+        </p>
+    </div>    
 </body>
 </html>
