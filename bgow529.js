@@ -7,6 +7,7 @@ displayAllItems("");
 function displayAllItems(searchTerm = ""){
     console.log("displaying");
     let container = document.getElementById("display container");
+    container.innerHTML = "";
     xhr.open("GET","http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/search?term="+searchTerm,true);
     xhr.setRequestHeader("Accept","application/json;charset=utf-8");
     xhr.onload = () => {
