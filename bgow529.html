@@ -24,16 +24,19 @@
             <p>If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the department and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.</p>
         </div>
         <ul id="main_nav">
-            <li onclick="switchPage('homepage')">Home</li>
             <li onclick="switchPage('news')">News</li>
             <li onclick="switchPage('displays')">Displays</li>
             <li onclick="switchPage('comments')">Comments</li>
         </ul>
+        <p id="version">hello</p>
     </div>
     <div id="displays" class="page">
-        <p class="headings">
-            DISPLAYS
-        </p>
+        <h2>Displays</h2>
+        <div id = "display search">
+            <input type="text" placeholder="Search displays..." oninput="displayAllItems(this.value)">
+        </div>
+        <div id = "display container">
+        </div>
     </div>
     <div id="news" class="page">
         <p class="headings">
