@@ -1,51 +1,28 @@
-#main_nav {
-    margin: 2% auto 2% auto;
-    width: 30%;
-    background-color: aqua;
-    border: 10px solid black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#main_nav li {
-    list-style: none;
-    margin: 10px auto 10px auto;
-    background-color: sienna;
-    border: 5px solid silver;
+body {
+    background-color: #424874;
+}
+#homepage img {
+    display: block;
+    width: 15%;
+    margin: 4% auto 3% auto;
 }
 
-#top_nav {
-    display: none;
-}
-
-#top_nav li {
-    list-style: none;
-    font-size: 1.1em;
-    border: 5px solid red;
-    transition: color 100ms;
-    transition: background-color 100,s;
-}
-
-#top_nav li:hover {
-
-    border: none;
-    background-color: black;
-    color: aliceblue;
-
-}
-
-#landing_text p {
-    font-size: 1.3em;
-    margin: 2% auto 2% auto;
-    text-align: justify;
-    width: 30%;
-}
-
-.headings {
-    font-size: 1.3em;
-    margin: 2% auto 2% auto;
+#homepage h2 {
+    color: #b9e3c6;
     text-align: center;
+    font-size: 3em;
+    margin-bottom: 2%  
+}
+
+#landing_text {
+    
 
 }
 
-body div:hover{
-    background-color: blueviolet;
-}
+

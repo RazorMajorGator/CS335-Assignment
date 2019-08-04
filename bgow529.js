@@ -8,7 +8,7 @@ displayNews();
 function displayAllItems(searchTerm = ""){
     let xhr = new XMLHttpRequest();
     console.log("displaying");
-    let container = document.getElementById("display container");
+    let container = document.getElementById("display_container");
     container.innerHTML = "";
     xhr.open("GET","http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/search?term="+searchTerm,true);
     xhr.setRequestHeader("Accept","application/json;charset=utf-8");
@@ -43,7 +43,7 @@ function displayItem(itemObject){
 
 function displayNews(){
     let xhr = new XMLHttpRequest();
-    let newsContainer = document.getElementById("news display");
+    let newsContainer = document.getElementById("news_display");
     xhr.open("GET","http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/news",true);
     xhr.setRequestHeader("Accept","application/json;charset=utf-8");
     xhr.onload = () => {
@@ -82,8 +82,8 @@ function getNewsItem(newsObject){
 }
 
 function submitComment(){
-    let commentBox = document.getElementById("comment box");
-    let commentName = document.getElementById("comment name");
+    let commentBox = document.getElementById("comment_box");
+    let commentName = document.getElementById("comment_name");
     if(commentBox.value === ""){
         commentBox.placeholder = "Please enter comment first";
         return;
@@ -102,7 +102,7 @@ function submitComment(){
     xhr.onload = () => {
         commentBox.value = "";
         commentBox.placeholder = "Comment submitted";
-        document.getElementById("comment frame").src += "";
+        document.getElementById("comment_frame").src += "";
     }
     xhr.send(JSON.stringify(comment));
     

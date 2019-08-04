@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompSci Museum</title>
     <link rel="icon" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png">
     <link rel="stylesheet" type="text/css" href="bgow529.css"/>
@@ -10,14 +10,16 @@
 </head>
 <body>
     <nav id="top_nav">
+        <img onclick="switchPage('homepage')" src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg">
         <ul>
-            <li onclick="switchPage('homepage')">Home</li>
             <li onclick="switchPage('news')">News</li>
             <li onclick="switchPage('displays')">Displays</li>
             <li onclick="switchPage('comments')">Comments</li>
         </ul>
     </nav>
     <div id="homepage" class="page">
+        <img src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg">
+        <h2>The Bob Doran Museum of Computing</h2>
         <div id="landing_text">
             <p>Welcome to our displays on the history of computing and computers. </p>
             <p> You might like to have a look at the history time line in the entrance corridor down below or visit one of the lobbies to the right for displays containing more detail.You can learn more about the displays here, where you can also see a list of the many topics that we cover. </p>
@@ -32,29 +34,26 @@
     </div>
     <div id="displays" class="page">
         <h2>Displays</h2>
-        <div id = "display search">
+        <div id = "display_search">
             <input type="text" placeholder="Search displays..." oninput="displayAllItems(this.value)">
         </div>
-        <div id = "display container">
+        <div id = "display_container">
         </div>
     </div>
     <div id="news" class="page">
-        <p class="headings">
-            NEWS
-        </p>
-        <div id="news display">
+        <h2>News Feed</h2>
+        <div id="news_display">
             
         </div>
     </div>
     <div id="comments" class="page">
-        <p class="headings">
-            COMMENTS
-        </p>
-        <textarea name="comment" id="comment box" placeholder="Enter Comment Here..."></textarea>
-        <input type="text" id="comment name" placeholder="Enter your name...">
-        <input type="button" id="comment submit" value="Submit" onclick="submitComment()">
-        <div id="embedded comments">
-            <iframe id="comment frame" src=" http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
+        <h2>Guest Book</h2>
+        <p>See what others had to say...</p>
+        <textarea name="comment" id="comment_box" placeholder="Enter Your Feedback Here..."></textarea>
+        <input type="text" id="comment_name" placeholder="Enter your name...">
+        <input type="button" id="comment_submit" value="Submit" onclick="submitComment()">
+        <div id="embedded_comments">
+            <iframe id="comment_frame" src=" http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
         </div>
         
     </div>    
