@@ -4,36 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompSci Museum</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap" rel="stylesheet"> 
     <link rel="icon" href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png">
     <link rel="stylesheet" type="text/css" href="bgow529.css"/>
     <script defer src="bgow529.js"></script>
 </head>
 <body>
     <nav id="top_nav">
-        <img onclick="switchPage('homepage')" src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg">
         <ul>
-            <li onclick="switchPage('news')">News</li>
-            <li onclick="switchPage('displays')">Displays</li>
-            <li onclick="switchPage('comments')">Comments</li>
+            <li id="homeButton" onclick="switchPage('homepage')"><img src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg"><p>Home</p></li>
+            <li onclick="switchPage('news')"><p>📰 News</p></li>
+            <li onclick="switchPage('displays')"><p>💻 Displays</p></li>
+            <li onclick="switchPage('comments')"><p>📖 Guest Book</p></li>
         </ul>
     </nav>
     <div id="homepage" class="page">
         <img src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg">
         <h2>The Bob Doran Museum of Computing</h2>
         <div id="landing_text">
-            <p>Welcome to our displays on the history of computing and computers. </p>
-            <p> You might like to have a look at the history time line in the entrance corridor down below or visit one of the lobbies to the right for displays containing more detail.You can learn more about the displays here, where you can also see a list of the many topics that we cover. </p>
+            <p>Welcome to our displays on the history of computing and computers. You can learn more about these displays on the Displays page, where you can also see a list of the computers on display.</p>
             <p>If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the department and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.</p>
         </div>
         <ul id="main_nav">
-            <li onclick="switchPage('news')">News</li>
-            <li onclick="switchPage('displays')">Displays</li>
-            <li onclick="switchPage('comments')">Comments</li>
+            <li onclick="switchPage('news')">📰 News</li>
+            <li onclick="switchPage('displays')">💻 Displays</li>
+            <li onclick="switchPage('comments')">📖 Comments</li>
         </ul>
         <p id="version">hello</p>
     </div>
     <div id="displays" class="page">
-        <h2>Displays</h2>
+        <h3>Displays</h3>
         <div id = "display_search">
             <input type="text" placeholder="Search displays..." oninput="displayAllItems(this.value)">
         </div>
@@ -41,20 +41,21 @@
         </div>
     </div>
     <div id="news" class="page">
-        <h2>News Feed</h2>
+        <h3>News Feed</h3>
         <div id="news_display">
             
         </div>
     </div>
     <div id="comments" class="page">
-        <h2>Guest Book</h2>
+        <h3>Guest Book</h3>
         <p>See what others had to say...</p>
         <textarea name="comment" id="comment_box" placeholder="Enter Your Feedback Here..."></textarea>
-        <input type="text" id="comment_name" placeholder="Enter your name...">
-        <input type="button" id="comment_submit" value="Submit" onclick="submitComment()">
-        <div id="embedded_comments">
-            <iframe id="comment_frame" src=" http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
+        <div>
+            <input type="text" id="comment_name" placeholder="Enter your name...">
+            <input type="button" id="comment_submit" value="Submit" onclick="submitComment()">
+
         </div>
+        <iframe id="comment_frame" src=" http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
         
     </div>    
 </body>

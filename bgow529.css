@@ -5,24 +5,244 @@
 }
 
 body {
-    background-color: #424874;
+    background-color: #161b33;
+    font-family: 'Open Sans', sans-serif;
 }
 #homepage img {
     display: block;
     width: 15%;
-    margin: 4% auto 3% auto;
+    margin: 2% auto 2% auto;
+    border-radius: 50%;
+    background-color: #84B352;
 }
 
 #homepage h2 {
-    color: #b9e3c6;
+    font-family: 'Merriweather', serif;
+    color: #84B352;
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 2%  
+    font-size: 4em;
+    margin-bottom: 1%  
 }
 
 #landing_text {
-    
+    width: 60%;
+    margin: 1% auto 1% auto;
+    padding: 1%;
+    color: #84B352;
 
 }
+
+#landing_text p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    margin: 1%;
+    text-align: justify;
+}
+
+#main_nav {
+    list-style: none;
+    display: flex;
+    width: 60%;
+    margin: 1% auto 1% auto;
+}
+
+#main_nav li {
+    transition: all 0.5s;
+    display: block;
+    width: 33%;
+    background-color: #92CC54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    color: #161b33;
+    text-align: center;
+    padding: 2%;
+        
+
+}
+
+#main_nav li:hover {
+    background-color: #84B352;
+    color: black; 
+    cursor: pointer;   
+}
+
+
+#top_nav ul {
+    display: flex;
+    height: 8vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #92CC54;
+}
+
+#top_nav ul li {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+
+}
+
+#top_nav ul li:hover {
+    background-color: #84B352;
+    cursor: pointer;
+}
+
+#top_nav ul li p{
+    margin: auto;
+    font-size: 1.5em;
+    color: #161b33;
+    text-align: center;
+    
+
+} 
+#top_nav ul li img {
+    display: block;
+    margin: auto 0 auto auto;
+    height: 80%;
+
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    color: #92CC54;
+    width: 50%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+#display_container h3 {
+    
+    width: auto;
+    font-size: 2em;
+    text-align: left;
+    margin: 2% 4% 2% 4%;
+    border-bottom: 2px solid #92CC54;
+
+}
+
+#display_container img {
+    display: block;
+    height: 40vh;
+    margin: 2% auto;
+    border: 2px solid #92CC54;
+}
+
+#display_search input {
+    transition: all 0.5s;
+    display: block;
+    width: 20%;
+    margin: 2% auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.3em;
+    background-color: #111;
+    color: #92CC54;
+    border: none;
+
+}
+
+#display_search input:focus{
+    border: 2px solid #84B352;
+}
+
+#display_container p {
+    width: auto;
+    font-size: 1.5em;
+    color: #92CC54;
+    margin: 2% 4% 2% 4%;
+    text-align: justify;
+
+}
+
+#news_display img {
+    display: block;
+    height: 40vh;
+    margin: 2% auto;
+    border: 2px solid #92CC54;
+}
+
+#news_display h2 {
+    
+    width: auto;
+    font-size: 2em;
+    text-align: left;
+    margin: 2% 4% 2% 4%;
+    border-bottom: 2px solid #92CC54;
+
+}
+
+#news_display a {
+    text-decoration: none;
+    color: #819DFF;
+}
+
+#news_display a:hover {
+    color: #4960B3;
+}
+
+
+#news_display p, #comments p {
+    width: auto;
+    font-size: 1.5em;
+    color: #92CC54;
+    margin: 2% 4% 2% 4%;
+    text-align: justify;
+
+}
+
+#comments iframe {
+    display: block;
+    width: 80%;
+    margin: 2% auto;
+    background-color: #84B352;
+    
+}
+
+
+
+#comments textarea {
+    background-color: #111;
+    color: #92CC54;
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    width: 60%;
+    margin: 2% auto;
+    font-size: 1.5em;
+}
+
+#comments div {
+    width: 60%;
+    text-align: right;
+    margin: 2% auto;
+}
+
+#comments input[type="text"]{
+    background-color: #111;
+    color: #92CC54;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+}
+
+#comments input[type="button"] {
+    background-color: #92CC54;
+    color: #161b33;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    padding: 2px;
+
+}
+
+
 
 
