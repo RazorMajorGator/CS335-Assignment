@@ -42,11 +42,21 @@
         <p class="headings">
             NEWS
         </p>
+        <div id="news display">
+            
+        </div>
     </div>
     <div id="comments" class="page">
         <p class="headings">
             COMMENTS
         </p>
+        <textarea name="comment" id="comment box" placeholder="Enter Comment Here..."></textarea>
+        <input type="text" id="comment name" placeholder="Enter your name...">
+        <input type="button" id="comment submit" value="Submit" onclick="submitComment()">
+        <div id="embedded comments">
+            <iframe id="comment frame" src=" http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
+        </div>
+        
     </div>    
 </body>
 </html>
