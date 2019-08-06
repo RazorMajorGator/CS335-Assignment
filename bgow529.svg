@@ -1,0 +1,22 @@
+<svg width = "500" height = "500">
+
+    <circle cx = "250" cy = "250" r="200" fill = "none" stroke = "black" stroke-width = "2" />
+    <circle cx = "250" cy = "250" r="150" fill = "none" stroke = "black" stroke-width = "2" />
+    <rect x = "150" y = "200" height = "100" width = "15" />
+    <rect x = "196.25" y = "200" height = "100" width = "15" />
+    <rect x = "242.5" y = "200" height = "100" width = "15" />
+    <rect x = "288.75" y = "200" height = "100" width = "15" />
+    <rect x = "335" y = "200" height = "100" width = "15" />
+
+    <circle cx = "157.5" cy = "200" r = "7.5" />
+    <circle cx = "203.75" cy = "200" r = "7.5" />
+    <circle cx = "250" cy = "200" r = "7.5" />
+    <circle cx = "296.25" cy = "200" r = "7.5" />
+    <circle cx = "342.5" cy = "200" r = "7.5" />
+    <circle cx = "157.5" cy = "300" r = "7.5" />
+    <circle cx = "203.75" cy = "300" r = "7.5" />
+    <circle cx = "250" cy = "300" r = "7.5" />
+    <circle cx = "296.25" cy = "300" r = "7.5" />
+    <circle cx = "342.5" cy = "300" r = "7.5" />
+
+</svg>
