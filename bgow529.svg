@@ -1,7 +1,7 @@
 <svg width = "500" height = "500">
 
-    <circle cx = "250" cy = "250" r="200" fill = "none" stroke = "black" stroke-width = "2" />
-    <circle cx = "250" cy = "250" r="150" fill = "none" stroke = "black" stroke-width = "2" />
+    <circle cx = "250" cy = "250" r="225" fill = "none" stroke = "black" stroke-width = "2" />
+    <circle cx = "250" cy = "250" r="175" fill = "none" stroke = "black" stroke-width = "2" />
     <rect x = "150" y = "200" height = "100" width = "15" />
     <rect x = "196.25" y = "200" height = "100" width = "15" />
     <rect x = "242.5" y = "200" height = "100" width = "15" />
@@ -18,5 +18,24 @@
     <circle cx = "250" cy = "300" r = "7.5" />
     <circle cx = "296.25" cy = "300" r = "7.5" />
     <circle cx = "342.5" cy = "300" r = "7.5" />
+
+    <rect x = "137.5" y = "170" width = "225" height = "15"/>
+    <rect x = "137.5" y = "315" width = "225" height = "15"/>
+    <rect x = "125" y = "345" width = "250" height = "15"/>
+
+    <circle cx = "137.5" cy = "177.5" r = "7.5" />
+    <circle cx = "362.5" cy = "177.5" r = "7.5" />
+
+    <circle cx = "137.5" cy = "322.5" r = "7.5" />
+    <circle cx = "362.5" cy = "322.5" r = "7.5" />
+
+    <circle cx = "125" cy = "352.5" r = "7.5" />
+    <circle cx = "375" cy = "352.5" r = "7.5" />
+
+    <polygon points = "125,155 125,140 242.5,87.5 257.5,87.5 375,140 375,155" />
+
+    <circle cx = "126.5" cy = "147.5" r = "7.5" />
+    <circle cx = "373.5" cy = "147.5" r = "7.5" />
+    <circle cx = "250" cy = "97.25" r = "12" />
 
 </svg>
