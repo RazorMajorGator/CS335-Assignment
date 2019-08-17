@@ -1,0 +1,38 @@
+<xs:schema id="PhoneBook" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name = "mediaType">
+        <xs:restriction base = "xs:string">
+            <xs:pattern value = "[a-z]+\/[a-z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name = "enclosure">
+        <xs:simpleContent>
+            <xs:extension base = "xs:string">
+                <xs:attribute name = "type" type = "mediaType" use = "required" />
+                <xs:attribute name = "length" type = "xs:integer" use = "optional"/>
+            </xs:extension>        
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name = "newsItem">
+        <xs:all>
+            <xs:element name = "descriptionField" type = "xs:string"/>
+            <xs:element name = "enclosureField" type = "enclosure" />
+            <xs:element name = "guidField" type = "xs:string"/>
+            <xs:element name = "linkField" type = "xs:string"/>
+            <xs:element name = "pubDateField" type = "xs:string"/>
+            <xs:element name = "titleField" type = "xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name = "ArrayOfRSSItem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name = "RSSItem" type = "newsItem" minOccurs = "0" maxOccurs = "unbounded" />
+            </xs:sequence>
+        </xs:complexType> 
+    </xs:element>
+
+    
+</xs:schema>
